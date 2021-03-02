@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+// FONT SIZE
+$default-font-size: 1.1rem;
+$big-font-size: 5rem;
+$mid-font-size: 3rem;
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.App-intro-name, .App-intro-job{
+  font-size: $mid-font-size;
+  font-weight: bold;
+}
+.App-intro-menu-item{
+  font-size: $default-font-size;
+  font-weight: bold;
+}
+.App-intro-menu-item-2{
+  font-size: $default-font-size;
+  font-weight: bold; 
+}
+.App-intro-menu-item-3{
+  font-size: $default-font-size;
+  font-weight: bold; 
+}
+
+.App-Profile-title{
+  font-size: $mid-font-size;
+}
+.App-profile-description-item{
+  font-size: $default-font-size;
+}
+
+.App-project-list-title{
+  font-size: $mid-font-size;
+}
+
+.App-project-title{
+  font-family: 'Roboto', sans-serif;
+  font-size: $big-font-size;
+}
+.App-project-description{
+  font-size: $default-font-size;
+}
+.App-project-link{
+  font-weight: bold;
+}
+.App-project-right-title{
+  font-weight: bold;
+}
+
+.App-techs-list-title{
+  font-size: $mid-font-size;
+}
+.App-techs-list-item{
+  font-size: $default-font-size;
+}
+
+@media screen and (max-width: 600px) {
+  .App-project-title {
+    font-size: 50px;
+  }
+}

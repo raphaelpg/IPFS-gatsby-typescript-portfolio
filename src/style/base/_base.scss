@@ -1,0 +1,21 @@
+a {
+  text-decoration: none;
+}
+body{
+  margin: 0;
+}
+.App {
+  text-align: center;
+  margin: 0%;
+}
+.App-main{
+  width: 100%;
+}
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+%flex-row {
+	display: flex;
+  flex-direction: row;
+}

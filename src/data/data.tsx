@@ -1,8 +1,18 @@
+export interface ProjectData {
+  id: string,
+  img: string,
+  title: string,
+  description: string[],
+  url?: string,
+  repo?: string,
+  stack: string[]
+}
+
 //RESUME URL
-export const resumeUrl = "https://raw.githubusercontent.com/raphaelpg/resume/master/Raphael_Pinto_Full_Stack_JS.pdf"
+export const resumeUrl: string = "https://raw.githubusercontent.com/raphaelpg/resume/master/Raphael_Pinto_Full_Stack_JS.pdf"
 
 // LOGO DATA
-export const stackLogos = {
+export const stackLogos: {} = {
   aave: ['aave.svg', 'https://aave.com/'],
   aws: ['aws.jpeg', 'https://aws.amazon.com/'],
   css: ['css.svg', 'https://developer.mozilla.org/en-US/docs/Web/CSS'],
@@ -37,7 +47,7 @@ export const stackLogos = {
 };
 
 // PROJECTS DATA
-export const projectsData = [
+export const projectsData: ProjectData[] = [
   {
     id: '10',
     img: 'irrigate-prod.jpeg',

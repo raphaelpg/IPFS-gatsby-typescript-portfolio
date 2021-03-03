@@ -3,8 +3,8 @@ import React, { useContext } from 'react'
 import { Link } from 'react-scroll'
 import { UserContext } from '../../context/UserContext'
 
-const Intro = () => {
-	const { resume } = useContext(UserContext)
+const Intro: React.FC = () => {
+	const resume: string | undefined = useContext(UserContext)
 
 	return (
 		<div className="App-intro" data-sal="fade" data-sal-duration="1000">

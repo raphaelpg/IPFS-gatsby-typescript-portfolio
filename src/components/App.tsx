@@ -4,12 +4,12 @@ import Intro from './Intro/Intro'
 import Footer from './Footer/Footer'
 import Projects from './Projects/Projects'
 
-import { resumeUrl, stackLogos, projectsData } from '../data/data.js'
+import { resumeUrl, stackLogos, projectsData, ProjectData } from '../data/data'
 
-const App = () => {
-	const [resume, setResume] = useState([])
-	const [logos, setLogos] = useState([])
-	const [projects, setProjects] = useState([])
+const App: React.FC = () => {
+	const [resume, setResume] = useState<string | null>(null)
+	const [logos, setLogos] = useState<{} | null>(null)
+	const [projects, setProjects] = useState<ProjectData[] | null>(null)
 
 	useEffect(() => {
 		setResume(resumeUrl)

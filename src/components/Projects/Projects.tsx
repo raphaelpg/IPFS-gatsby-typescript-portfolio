@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 import { UserContext } from '../../context/UserContext'
 import Image from '../Image/Image'
 
-const Projects = () => {
+const Projects: React.FC = () => {
 	const { projects, logos } = useContext(UserContext)
 
 	return (
@@ -19,7 +19,7 @@ const Projects = () => {
         </div>
       </Link>
 			<div className='App-project-list'>
-				{projects.map(project => {
+				{projects?.map(project => {
           const {id, title, description, url, repo, img, stack } = project;
 
 					return(

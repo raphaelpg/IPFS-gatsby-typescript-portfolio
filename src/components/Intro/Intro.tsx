@@ -2,9 +2,10 @@ import React, { useContext } from 'react'
 // import Fade from 'react-reveal/Fade'
 import { Link } from 'react-scroll'
 import { UserContext } from '../../context/UserContext'
+import { appContextInterface } from '../../context/UserContext'
 
 const Intro: React.FC = () => {
-	const resume: string | undefined = useContext(UserContext)
+	const appContext: appContextInterface | null = useContext(UserContext)
 
 	return (
 		<div className="App-intro" data-sal="fade" data-sal-duration="1000">
@@ -24,7 +25,7 @@ const Intro: React.FC = () => {
 	        <Link to="contact" smooth duration={1000}>
 	          <div className="App-intro-menu-item-2" >Contact</div>
 	        </Link>
-          <a className="App-intro-menu-item-3" href={resume} target="_blank" rel="noopener noreferrer">Resume</a>
+          <a className="App-intro-menu-item-3" href={appContext?.resume} target="_blank" rel="noopener noreferrer">Resume</a>
 				</div>
 			{/*</Fade>*/}
 	  </div>

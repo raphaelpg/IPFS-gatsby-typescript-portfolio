@@ -1,8 +1,7 @@
 import React, { useContext } from 'react'
 // import Fade from 'react-reveal/Fade'
 import { Link } from 'react-scroll'
-import { UserContext } from '../../context/UserContext'
-import { appContextInterface } from '../../context/UserContext'
+import { UserContext, appContextInterface } from '../../context/UserContext'
 
 const Intro: React.FC = () => {
 	const appContext: appContextInterface | null = useContext(UserContext)

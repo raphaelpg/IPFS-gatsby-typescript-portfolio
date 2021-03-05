@@ -1,12 +1,87 @@
 .contactContainer {
   width: 100%;
+  margin: 3% 0;
+}
+
+.contactTitle{
+  margin-left: 3%;
 }
 
 .contactForm {
   width: 50%;
   margin: auto;
-  border: 1px blue solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.formLabel {
+  margin: 2% auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.formInput {
+  width: 70%;
+  border-top: white;
+  border-left: white;
+  border-right: white;
+  border-bottom: 1px solid grey;
+  box-shadow: 0px 0px 10px grey;
+  border-radius: 10px;
+  height: 25px;
+  padding: 2px;
+  display: flex;
+}
+.formInput:focus{
+  border: none;
+  box-shadow: 0px 0px 10px $primary-color;
+}
+
+textarea {
+  width: 70%;
+  border-top: white;
+  border-left: white;
+  border-right: white;
+  border-bottom: 1px solid grey;
+  box-shadow: 0px 0px 10px grey;
+  border-radius: 10px;
+  height: 100px;
+  padding: 2px;
+  display: flex;
+}
+textarea:focus{
+  border: none;
+  box-shadow: 0px 0px 10px $primary-color;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+button {
+  width: 20%;
+  margin: 2% auto;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: $primary-color;
+  color: $background-color;
+  box-shadow: 0px 0px 10px grey;
+  transition: 0.3s;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px $primary-color;
+  background-color: $background-color;
+  color: $primary-color;
+  transition: 0.3s;
+}
+button:focus{
+  box-shadow: 0px 0px 10px $primary-color;
+  background-color: $background-color;
+  color: $primary-color;
+  transition: 0.3s;
 }

@@ -18,13 +18,19 @@ const Intro: React.FC = () => {
 			{/*</Fade>*/}
 			{/*<Fade bottom duration={1000} delay={1000} distance="30px">*/}
 				<div className="App-intro-menu-container">
-	        <Link to="project-list" smooth duration={1000}>
-	          <div className="App-intro-menu-item" >Projects</div>
+					<Link to="project-list" smooth duration={1000}>
+	          <div className="App-intro-menu-item" tabIndex="0">
+							Projects
+						</div>
 	        </Link>
 	        <Link to="contact" smooth duration={1000}>
-	          <div className="App-intro-menu-item-2" >Contact</div>
+	          <div className="App-intro-menu-item-2" tabIndex="0">
+							Contact
+						</div>
 	        </Link>
-          <a className="App-intro-menu-item-3" href={appContext?.resume} target="_blank" rel="noopener noreferrer">Resume</a>
+          <a className="App-intro-menu-item-3" href={appContext?.resume} target="_blank" rel="noopener noreferrer">
+						Resume
+					</a>
 				</div>
 			{/*</Fade>*/}
 	  </div>

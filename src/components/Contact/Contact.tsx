@@ -24,25 +24,25 @@ const Contact: React.FC = () => {
 
   return (
     <div className="contactContainer">
+      <div className="App-project-list-title contactTitle">
+        Contact me
+      </div>
       <form 
         className="contactForm" 
         onSubmit={submitForm} 
         method="post" 
         action="https://formspree.io/f/xzbkllzq"
       >
-        <label>
-          Name
-          <input type="text" name="name" id="name" required />
+        <label className="formLabel">
+          <input className="formInput" type="text" name="name" id="name" placeholder="Full Name" required/>
         </label>
-        <label>
-          Email
-          <input type="email" name="email" id="email" required />
+        <label className="formLabel">
+          <input className="formInput" type="email" name="email" id="email" placeholder="Email" required/>
         </label>
-        <label>
-          Message
-          <textarea name="message" id="message" rows="5" required />
+        <label className="formLabel">
+          <textarea name="message" id="message" rows="5" placeholder="Message" required/>
         </label>
-        {status === "SUCCESS" ? <p>Thanks !</p> : <button type="submit">Send</button>}
+        {status === "SUCCESS" ? <button>Thanks !</button> : <button type="submit">Send</button>}
         {status === "ERROR" && <p>There was an error.</p>}
       </form>
     </div>

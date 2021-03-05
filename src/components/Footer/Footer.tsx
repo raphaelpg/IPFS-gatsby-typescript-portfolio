@@ -14,7 +14,7 @@ const Footer = () => {
 
 	return (
     <footer className="App-footer">
-  		<div name="contact" className="App-Links-container">
+  		<div className="App-Links-container">
         <div className="App-Links-link">
   			  {new Date().getFullYear()}
         </div>

@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
   }
 
   return (
-    <div className="contactContainer">
+    <div className="contactContainer" name="contact">
       <div className="App-project-list-title contactTitle">
         Contact me
       </div>

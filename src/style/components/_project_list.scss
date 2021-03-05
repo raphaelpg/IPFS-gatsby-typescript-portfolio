@@ -5,9 +5,7 @@
 .App-project-list-title{
   display: flex;
 }
-.App-project-list-title:hover{
-  cursor: pointer;
-}
+
 .App-project-list{
   @extend %flex-column;
   margin-left: 2%;

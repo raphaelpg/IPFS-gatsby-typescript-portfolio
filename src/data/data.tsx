@@ -12,44 +12,6 @@ export interface ProjectData {
 export const resumeUrl: string = "https://raw.githubusercontent.com/raphaelpg/resume/master/Raphael_Pinto_Full_Stack_JS.pdf"
 
 // LOGO DATA
-// export const stackLogos: {} = {
-//     "aave": {
-//       "filename": "aave.svg",
-//       "url": "https://aave.com/"
-//     },
-
-//   aave: ['aave.svg', 'https://aave.com/'],
-//   aws: ['aws.jpeg', 'https://aws.amazon.com/'],
-//   css: ['css.svg', 'https://developer.mozilla.org/en-US/docs/Web/CSS'],
-//   emailjs: ['emailjs.jpeg', 'https://www.emailjs.com/'],
-//   ethereum: ['ethereum.jpeg', 'https://ethereum.org/en/'],
-//   express: ['express.svg', 'http://expressjs.com/'],
-//   fleek: ['fleek.jpeg', 'https://fleek.co/ipfs-gateway/'],
-//   ganache: ['ganache.jpeg', 'https://www.trufflesuite.com/ganache'],
-//   gatsby: ['gatsby.jpeg', 'https://www.gatsbyjs.com/docs/'],
-//   github: ['github.jpeg', 'https://github.com/raphaelpg'],
-//   googleplaces: ['googleplaces.jpeg', 'https://developers.google.com/places/web-service/overview'],
-//   heroku: ['heroku.jpeg', 'https://www.heroku.com/'],
-//   highcharts: ['highcharts.jpeg', 'https://www.highcharts.com/'],
-//   html: ['html.svg', 'https://developer.mozilla.org/en-US/docs/Web/HTML'],
-//   ionos: ['ionos.svg', 'https://www.ionos.com/'],
-//   ipfs: ['ipfs.jpeg', 'https://ipfs.io/'],
-//   javascript: ['javascript.svg', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'],
-//   jquery: ['jquery.svg', 'https://api.jquery.com/'],
-//   linkedin: ['linkedin.jpeg', 'https://www.linkedin.com/in/raphael-pinto-gregorio-660b2579/'],
-//   mongo: ['mongo.svg', 'https://www.mongodb.com/2'],
-//   nginx: ['nginx.svg', 'https://nginx.org/en/docs/'],
-//   node: ['node.svg', 'https://nodejs.org/en/'],
-//   php: ['php.svg', 'https://www.php.net/'],
-//   pm2: ['pm2.jpeg', 'https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/'],
-//   react: ['react.jpeg', 'https://reactjs.org/docs/getting-started.html'],
-//   sass: ['sass.svg', 'https://sass-lang.com/documentation'],
-//   solidity: ['solidity.jpeg', 'https://docs.soliditylang.org/en/latest/'],
-//   sql: ['sql.jpeg', 'https://www.w3schools.com/sql/'],
-//   superfluid: ['superfluid.jpeg', 'https://www.superfluid.finance/'],
-//   truffle: ['truffle.svg', 'https://www.trufflesuite.com/docs/truffle/overview'],
-//   web3: ['web3.jpeg', 'https://web3js.readthedocs.io/']
-// };
 export const stackLogos: {} = {
   "aave": {
     "filename": "aave.svg",
@@ -78,6 +40,10 @@ export const stackLogos: {} = {
   "fleek": {
     "filename": "fleek.jpeg",
     "url": "https://fleek.co/ipfs-gateway/"
+  },
+  "formspree": {
+    "filename": "formspree.png",
+    "url": "https://formspree.io/"
   },
   "ganache": {
     "filename": "ganache.jpeg",
@@ -139,6 +105,10 @@ export const stackLogos: {} = {
     "filename": "node.svg",
     "url": "https://nodejs.org/en/"
   },
+  "ovh": {
+    "filename": "ovh.svg",
+    "url": "https://www.ovh.ie/"
+  },
   "php": {
     "filename": "php.svg",
     "url": "https://www.php.net/"
@@ -171,16 +141,47 @@ export const stackLogos: {} = {
     "filename": "truffle.svg",
     "url": "https://www.trufflesuite.com/docs/truffle/overview"
   },
+  "typescript": {
+    "filename": "typescript.png",
+    "url": "https://www.typescriptlang.org/docs/handbook/intro.html"
+  },
   "web3": {
     "filename": "web3.jpeg",
     "url": "https://web3js.readthedocs.io/"
+  },
+  "wordpress": {
+    "filename": "wordpress.png",
+    "url": "https://wordpress.org/"
   }
 }
 
 // PROJECTS DATA
 export const projectsData: ProjectData[] = [
   {
-    id: '10',
+    id: '12',
+    img: 'ipfs-portfolio.jpeg',
+    title: 'IPFS-Portfolio-Typescript',
+    description: [
+      'My portfolio made with Gatsby and hosted on IPFS.',
+      'First use of Typescript.',
+      'Deployment has been made with Fleek.',
+      'Solo project.',
+      '',
+    ],
+    url: 'https://future-space.net/',
+    repo: 'https://github.com/raphaelpg/IPFS-gatsby-typescript-portfolio',
+    stack: [
+      'gatsby',
+      'typescript',
+      'react',
+      'formspree',
+      'sass',
+      'ipfs',
+      'fleek',
+    ]
+  },
+  {
+    id: '11',
     img: 'irrigate-prod.jpeg',
     title: 'Irrigate-app front end',
     description: [
@@ -200,7 +201,7 @@ export const projectsData: ProjectData[] = [
     ]
   },
   {
-    id: '9',
+    id: '10',
     img: 'irrigate-prod.jpeg',
     title: 'Irrigate-app back end',
     description: [
@@ -220,7 +221,7 @@ export const projectsData: ProjectData[] = [
     ]
   },
   {
-    id: '8',
+    id: '9',
     img: 'ipfs-portfolio.jpeg',
     title: 'IPFS-Portfolio',
     description: [
@@ -240,7 +241,7 @@ export const projectsData: ProjectData[] = [
     ]
   },
   {
-    id: '7',
+    id: '8',
     img: 'IrrigateV2_light.jpeg',
     title: 'Irrigate-x-Superfluid',
     description: [
@@ -263,7 +264,7 @@ export const projectsData: ProjectData[] = [
     ]
   },
   {
-    id: '6',
+    id: '7',
     img: 'irrigate-screenshot.jpeg',
     title: 'Irrigate-x-Aave Prototype',
     description: [
@@ -285,8 +286,8 @@ export const projectsData: ProjectData[] = [
       'heroku',
     ]
   },
-    {
-    id: '5',
+  {
+    id: '6',
     img: 'cryptogama-screenshot.jpeg',
     title: 'Cryptogama',
     description: [
@@ -310,8 +311,8 @@ export const projectsData: ProjectData[] = [
       'highcharts',
     ]
   },
-    {
-    id: '4',
+  {
+    id: '5',
     img: 'donato-screenshot.jpeg',
     title: 'Donato',
     description: [
@@ -330,8 +331,8 @@ export const projectsData: ProjectData[] = [
       'web3',
     ]
   },
-    {
-    id: '3',
+  {
+    id: '4',
     img: 'yobale-screenshot.jpeg',
     title: 'Yobale',
     description: [
@@ -351,7 +352,28 @@ export const projectsData: ProjectData[] = [
       'googleplaces',
     ]
   },
-    {
+  {
+    id: '3',
+    img: 'espritvelo-screenshot.jpeg',
+    title: 'Esprit Velo',
+    description: [
+      'Redesign of the bike shop website.',
+      'Previous existing site on Wordpress, had to change and customize a theme, design additional modules.',
+      'Solo project.',
+      '',
+    ],
+    url: 'http://www.espritvelo.fr/',
+    repo: '',
+    stack: [
+      'wordpress',
+      'javascript',
+      'php',
+      'css',
+      'html',
+      'ovh',
+    ]
+  },
+  {
     id: '2',
     img: 'spacedodger-screenshot.jpeg',
     title: 'SpaceDodger',
@@ -369,7 +391,7 @@ export const projectsData: ProjectData[] = [
       'html',
     ]
   },
-    {
+  {
     id: '1',
     img: 'nekosake-screenshot.jpeg',
     title: 'NekoSake',
@@ -387,6 +409,7 @@ export const projectsData: ProjectData[] = [
       'html',
       'php',
       'sql',
+      'ionos',
     ]
   },
 ];

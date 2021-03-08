@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
           <input className="formInput" type="email" name="email" id="email" placeholder="Email" required/>
         </label>
         <label className="formLabel">
-          <textarea name="message" id="message" rows="5" placeholder="Message" required/>
+          <textarea name="message" id="message" placeholder="Message" required/>
         </label>
         {status === "SUCCESS" ? <button>Thanks !</button> : <button type="submit">Send</button>}
         {status === "ERROR" && <p>There was an error.</p>}

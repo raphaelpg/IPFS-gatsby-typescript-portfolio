@@ -6,7 +6,7 @@ const Footer = () => {
 	// const { logos } = useContext(UserContext)
   const appContext: appContextInterface | null = useContext(UserContext)
 
-	const [links, setLinks] = useState([])
+	const [links, setLinks] = useState<string[]>([])
 
 	useEffect(() => {
 		setLinks(['github', 'linkedin'])

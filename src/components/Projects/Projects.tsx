@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
         </div>
       </Link>
 			<div className='App-project-list'>
-				{projects?.map(project => {
+				{projects?.map((project: any) => {
           const {id, title, description, url, repo, img, stack } = project;
 
 					return(
@@ -34,7 +34,7 @@ const Projects: React.FC = () => {
                   <div className="App-project-right-top-container">
                     <div className="App-project-description-container">
                       <ul className="App-project-description">
-                        {description ? description.map((item, index) => item ? <li key={index}>{item}</li> : '') : ''}
+                        {description ? description.map((item: string, index: number) => item ? <li key={index}>{item}</li> : '') : ''}
                       </ul>
                       {url && (
                         <a
@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
                           target="_blank" 
                           rel="noopener noreferrer"
                         >
-                        Deployed project
+                        See
                         </a>
                       )}
                       {repo && ( 
@@ -75,7 +75,7 @@ const Projects: React.FC = () => {
                     <div className="App-project-right-title">Stack:</div>
                       <div className="App-project-techs-container">
 
-                        {stack.map(item => (
+                        {stack.map((item: any) => (
                           <div key={item} className="App-project-techs-item">
                             <div className="App-tech-logo-container">
                               <a 

@@ -74,10 +74,11 @@ export const projectsData: ProjectData[] = [
     title: 'Irrigate-app back end',
     description: [
       'Back end of the production version of Irrigate, the platform to gather all NGO\'s and associations accross the world allowing users to send donations from anywhere to everywhere using DAI currency.',
-      'The server is hosted on Ionos 1&1 and serves data as an API from a MongoDb Atlas database.',
+      'The server is hosted on Ionos 1&1 and serves data as a REST API from a MongoDb Atlas database.',
       'Current status is work in progress.',
       'Solo project.',
     ],
+    url: 'https://www.future-space.org/api/causes',
     repo: 'https://github.com/raphaelpg/irrigate-prod-server',
     stack: [
       'node',

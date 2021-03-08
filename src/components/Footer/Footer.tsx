@@ -3,8 +3,8 @@ import { UserContext, appContextInterface } from '../../context/UserContext'
 import Image from '../Image/Image'
 
 const Footer = () => {
-	// const { logos } = useContext(UserContext)
   const appContext: appContextInterface | null = useContext(UserContext)
+  const logos: {} | undefined = appContext?.logos
 
 	const [links, setLinks] = useState<string[]>([])
 
@@ -18,9 +18,9 @@ const Footer = () => {
         <div className="App-Links-link">
   			  {new Date().getFullYear()}
         </div>
-        {links.map(item => (
-          <a key={item} className="App-Links-link" href={appContext?.logos[item][1]} target="_blank" rel="noopener noreferrer">
-            <Image alt={item + " logo"} filename={appContext?.logos[item][0]!} cat="link" />
+        {links.map((item: any) => (
+          <a key={item} className="App-Links-link" href={(logos as any)[item]["url"]} target="_blank" rel="noopener noreferrer">
+            <Image alt={item + " logo"} filename={(logos as any)[item]["filename"]!} cat="link" />
           </a>
         ))}
       </div>

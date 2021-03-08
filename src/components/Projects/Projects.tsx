@@ -1,11 +1,13 @@
 import React, { useContext } from 'react'
 import Fade from 'react-reveal/Fade'
 import { Link } from 'react-scroll'
-import { UserContext } from '../../context/UserContext'
+import { UserContext, appContextInterface } from '../../context/UserContext'
 import Image from '../Image/Image'
 
 const Projects: React.FC = () => {
-	const { projects, logos } = useContext(UserContext)
+  const appContext: appContextInterface | null = useContext(UserContext)
+  const logos = appContext?.logos
+  const projects = appContext?.projects
 
 	return (
 		<div className="App-project-list-container">
@@ -79,13 +81,13 @@ const Projects: React.FC = () => {
                           <div key={item} className="App-project-techs-item">
                             <div className="App-tech-logo-container">
                               <a 
-                              	href={logos[item][1]} 
+                              	href={(logos as any)[item]["url"]} 
                               	target="_blank"
                               	rel="noopener noreferrer"
                               >
                                 <Image 
                                   alt={item + " logo"} 
-                                  filename={logos[item][0]}
+                                  filename={(logos as any)[item]["filename"]}
                                   cat='stack'
                                 />
                               </a>

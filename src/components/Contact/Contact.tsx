@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const Contact: React.FC = () => {
   const [status, setStatus] = useState<string>('')
 
-  const submitForm = (e: React.SyntheticEvent) => {
+  const submitForm = (e: any) => {
     e.preventDefault();
     const form = e.target;
     const data = new FormData(form);

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { UserContext } from '../context/UserContext'
+import { UserContext, appContextInterface } from '../context/UserContext'
 import Intro from './Intro/Intro'
 import Projects from './Projects/Projects'
 import Contact from './Contact/Contact'
 import Footer from './Footer/Footer'
-
 import { resumeUrl, stackLogos, projectsData, ProjectData } from '../data/data'
 
 const App: React.FC = () => {
@@ -18,8 +17,14 @@ const App: React.FC = () => {
 		setProjects([...projectsData])
 	}, [])
 
+	let providerValue: appContextInterface | null;
+	if (typeof resume === 'string' && typeof logos === 'object' && typeof projects === 'object') {
+		providerValue = {resume, logos, projects}
+	} else {
+		providerValue = null;
+	}
 	return (
-		<UserContext.Provider value={{ resume, logos, projects }}>
+		<UserContext.Provider value={providerValue}>
 			<Intro />
 			<Projects	/>
 			<Contact />

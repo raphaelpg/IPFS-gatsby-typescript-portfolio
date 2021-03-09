@@ -12,7 +12,7 @@
 .App-intro-title-container{
   @extend %flex-column;
   justify-content: center;
-  height: 70vh;
+  height: 100vh;
 }
 .App-intro-name, .App-intro-job{
   @extend %flex-column;
@@ -23,44 +23,6 @@
   @extend %flex-column;
   justify-content: space-around;
   /*margin: 2% auto 0 auto;*/
-}
-.App-intro-menu-container{
-  @extend %flex-row;
-  justify-content: space-evenly;
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  width: 100%;
-  height: 15%;
-  background-color: white;
-  z-index: 9;
-}
-.App-intro-menu-item{
-  @extend %flex-column;
-  justify-content: center;
-  transition: $button-transition-speed;
-}
-.App-intro-menu-item:hover{
-  cursor: pointer;
-  transition: $button-transition-speed;
-}
-.App-intro-menu-item-2{
-  @extend %flex-column;
-  justify-content: center;
-  transition: $button-transition-speed;
-}
-.App-intro-menu-item-2:hover{
-  cursor: pointer;
-  transition: $button-transition-speed;
-}
-.App-intro-menu-item-3{
-  @extend %flex-column;
-  justify-content: center;
-  transition: $button-transition-speed;
-}
-.App-intro-menu-item-3:hover{
-  cursor: pointer;
-  transition: $button-transition-speed;
 }
 
 @media screen and (max-width: 1000px) {
@@ -75,7 +37,6 @@
     margin: 3% auto 0 auto;
     text-align: center;
   }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -88,16 +49,4 @@
   .App-intro-name, .App-intro-job {
     margin: 20% auto 0 auto;
   }
-
-  .App-project-list-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 0 0 2%;
-  }
-  .App-project-title {
-    font-size: 50px;
-    margin: 0 0 3% 3%;
-  }
-
 }

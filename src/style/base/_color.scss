@@ -24,22 +24,22 @@ body {
   color: $primary-color;
 }
 
-.App-intro-menu-item{
+.Header-item{
   color: $primary-color;
 }
-.App-intro-menu-item:hover{
+.Header-item:hover{
   color: $third-color;
 }
-.App-intro-menu-item-2{
+.Header-item-2{
   color: $primary-color;
 }
-.App-intro-menu-item-2:hover{
+.Header-item-2:hover{
   color: $fourth-color;
 }
-.App-intro-menu-item-3{
+.Header-item-3{
   color: $primary-color;
 }
-.App-intro-menu-item-3:hover{
+.Header-item-3:hover{
   color: $fifth-color;
 }
 
@@ -62,7 +62,4 @@ body {
 .App-footer{
 	/*background-image: $secondary-background-color;*/
   border-top: 3px solid $primary-color;
-}
-.App-Links-image{
-  /*background: $white-color;*/
 }

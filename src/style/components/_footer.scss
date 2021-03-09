@@ -1,6 +1,9 @@
 /*Footer section*/
 .App-footer{
+  position: static;
   padding: 3%;
+  width: 94%;
+  bottom: 0;
 }
 .App-Links-container{
   @extend %flex-row;

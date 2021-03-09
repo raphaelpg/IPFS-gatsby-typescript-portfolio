@@ -168,7 +168,7 @@ export const projectsData: ProjectData[] = [
       'Solo project.',
       '',
     ],
-    url: 'https://future-space.net/',
+    url: 'https://lively-cloud-0411.on.fleek.co/',
     repo: 'https://github.com/raphaelpg/IPFS-gatsby-typescript-portfolio',
     stack: [
       'gatsby',
@@ -357,8 +357,8 @@ export const projectsData: ProjectData[] = [
     img: 'espritvelo-screenshot.jpeg',
     title: 'Esprit Velo',
     description: [
-      'Redesign of the bike shop website.',
-      'Previous existing site on Wordpress, had to change and customize a theme, design additional modules.',
+      'Redesign of the website of a bike store.',
+      'Previous existing site on Wordpress, had to change and customize a theme, code additional module.',
       'Solo project.',
       '',
     ],

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import Fade from 'react-reveal/Fade'
+import { FadeIn } from '../../effects/effects'
 import { Link } from 'react-scroll'
 import { UserContext, appContextInterface } from '../../context/UserContext'
 import Image from '../Image/Image'
@@ -26,79 +26,75 @@ const Projects: React.FC = () => {
 
 					return(
 						<div key={id} className="App-project">
-							<Fade left duration={2000} distance="30px">
-                <div className="App-project-left-container">
-                  <div className="App-project-title">{title}</div>
-                </div>
-              </Fade>
-              <Fade bottom duration={2000} distance="50px">
-                <div className="App-project-right-container">
-                  <div className="App-project-right-top-container">
-                    <div className="App-project-description-container">
-                      <ul className="App-project-description">
-                        {description ? description.map((item: string, index: number) => item ? <li key={index}>{item}</li> : '') : ''}
-                      </ul>
-                      {url && (
-                        <a
-                          className="App-project-link" 
-                          href={url || '#!'} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                        >
-                        See
-                        </a>
-                      )}
-                      {repo && ( 
-                        <a 
-                          className="App-project-link"
-                          href={repo || '#!'}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                        Github repo
-                        </a>
-                      )}
-                    </div>
-                    <div className="App-project-screenshot-container">
-                      <a 
-                        href={url || repo} 
+              <FadeIn className="App-project-left-container" distance={30} triggerOnce={true}>
+                <div className="App-project-title">{title}</div>
+              </FadeIn>
+              <FadeIn className="App-project-right-container" distance={30} triggerOnce={true}>
+                <div className="App-project-right-top-container">
+                  <div className="App-project-description-container">
+                    <ul className="App-project-description">
+                      {description ? description.map((item: string, index: number) => item ? <li key={index}>{item}</li> : '') : ''}
+                    </ul>
+                    {url && (
+                      <a
+                        className="App-project-link" 
+                        href={url || '#!'} 
                         target="_blank" 
                         rel="noopener noreferrer"
                       >
-                        <Image 
-                          alt={"screenshot of " + title} 
-                          filename={img}
-                          cat='project'
-                        />
+                      See
                       </a>
-                    </div>
+                    )}
+                    {repo && ( 
+                      <a 
+                        className="App-project-link"
+                        href={repo || '#!'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                      Github repo
+                      </a>
+                    )}
                   </div>
-                  <div className="App-project-right-bottom-container">
-                    <div className="App-project-right-title">Stack:</div>
-                      <div className="App-project-techs-container">
-
-                        {stack.map((item: any) => (
-                          <div key={item} className="App-project-techs-item">
-                            <div className="App-tech-logo-container">
-                              <a 
-                              	href={(logos as any)[item]["url"]} 
-                              	target="_blank"
-                              	rel="noopener noreferrer"
-                              >
-                                <Image 
-                                  alt={item + " logo"} 
-                                  filename={(logos as any)[item]["filename"]}
-                                  cat='stack'
-                                />
-                              </a>
-                            </div>
-                          </div>
-                        ))}
-                        
-                      </div>
+                  <div className="App-project-screenshot-container">
+                    <a 
+                      href={url || repo} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <Image 
+                        alt={"screenshot of " + title} 
+                        filename={img}
+                        cat='project'
+                      />
+                    </a>
                   </div>
                 </div>
-              </Fade>
+                <div className="App-project-right-bottom-container">
+                  <div className="App-project-right-title">Stack:</div>
+                    <div className="App-project-techs-container">
+
+                      {stack.map((item: any) => (
+                        <div key={item} className="App-project-techs-item">
+                          <div className="App-tech-logo-container">
+                            <a 
+                              href={(logos as any)[item]["url"]} 
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Image 
+                                alt={item + " logo"} 
+                                filename={(logos as any)[item]["filename"]}
+                                cat='stack'
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      ))}
+                      
+                    </div>
+                </div>
+              </FadeIn>
 						</div>
 					)
 				})}

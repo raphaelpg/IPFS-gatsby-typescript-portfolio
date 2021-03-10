@@ -5,7 +5,6 @@ module.exports = {
     author: `Raphael Pinto Gregorio`,
   },
   plugins: [
-    `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sass`,

@@ -158,29 +158,6 @@ export const stackLogos: {} = {
 // PROJECTS DATA
 export const projectsData: ProjectData[] = [
   {
-    id: '12',
-    img: 'ipfs-portfolio.jpeg',
-    title: 'IPFS-Portfolio-Typescript',
-    description: [
-      'My portfolio made with Gatsby and hosted on IPFS.',
-      'First use of Typescript.',
-      'Deployment has been made with Fleek.',
-      'Solo project.',
-      '',
-    ],
-    url: 'https://lively-cloud-0411.on.fleek.co/',
-    repo: 'https://github.com/raphaelpg/IPFS-gatsby-typescript-portfolio',
-    stack: [
-      'gatsby',
-      'typescript',
-      'react',
-      'formspree',
-      'sass',
-      'ipfs',
-      'fleek',
-    ]
-  },
-  {
     id: '11',
     img: 'irrigate-prod.jpeg',
     title: 'Irrigate-app front end',
@@ -190,10 +167,11 @@ export const projectsData: ProjectData[] = [
       'It is currently work-in-progress.',
       'Solo project.',
     ],
-    url: 'https://autumn-queen-5530.on.fleek.co/',
+    url: 'https://irrigateapp.xyz/',
     repo: 'https://github.com/raphaelpg/irrigate-prod-client',
     stack: [
       'gatsby',
+      'typescript',
       'react',
       'sass',
       'ipfs',
@@ -227,14 +205,17 @@ export const projectsData: ProjectData[] = [
     description: [
       'My portfolio made with Gatsby and hosted on IPFS.',
       'Deployment has been made with Fleek.',
+      'First use of Typescript.',
       'Solo project.',
       '',
     ],
-    url: 'https://divine-dawn-0363.on.fleek.co/',
-    repo: 'https://github.com/raphaelpg/IPFS-Gatsby-portfolio',
+    url: 'https://lively-cloud-0411.on.fleek.co/',
+    repo: 'https://github.com/raphaelpg/IPFS-gatsby-typescript-portfolio',
     stack: [
       'gatsby',
+      'typescript',
       'react',
+      'formspree',
       'sass',
       'ipfs',
       'fleek',

@@ -25,11 +25,11 @@ const Projects: React.FC = () => {
           const {id, title, description, url, repo, img, stack } = project;
 
 					return(
-						<div key={id} className="App-project">
-              <FadeIn className="App-project-left-container" yDistance={0} xDistance={0} triggerOnce={true}>
+						<FadeIn key={id} className="App-project" duration={2000} triggerOnce={true}>
+              <div className="App-project-left-container" >
                 <div className="App-project-title">{title}</div>
-              </FadeIn>
-              <FadeIn className="App-project-right-container" yDistance={0} xDistance={0} triggerOnce={true}>
+              </div>
+              <div className="App-project-right-container">
                 <div className="App-project-right-top-container">
                   <div className="App-project-description-container">
                     <ul className="App-project-description">
@@ -73,7 +73,6 @@ const Projects: React.FC = () => {
                 <div className="App-project-right-bottom-container">
                   <div className="App-project-right-title">Stack:</div>
                     <div className="App-project-techs-container">
-
                       {stack.map((item: any) => (
                         <div key={item} className="App-project-techs-item">
                           <div className="App-tech-logo-container">
@@ -91,11 +90,10 @@ const Projects: React.FC = () => {
                           </div>
                         </div>
                       ))}
-                      
                     </div>
                 </div>
-              </FadeIn>
-						</div>
+              </div>
+						</FadeIn>
 					)
 				})}
 			</div>		

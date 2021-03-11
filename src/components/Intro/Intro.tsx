@@ -4,7 +4,7 @@ import { FadeIn } from '../../effects/effects'
 const Intro: React.FC = () => {
 
 	return (
-		<FadeIn className="App-intro" yDistance={0} xDistance={-30} triggerOnce={true} id="intro">
+		<FadeIn className="App-intro" xDistance={-30} triggerOnce={true} id="intro">
 			<div className="App-intro-container">
 				<div className="App-intro-title-container">
 					<div className="App-intro-name">Raphael Pinto Gregorio</div>

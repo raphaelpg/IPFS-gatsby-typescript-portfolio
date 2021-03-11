@@ -7,7 +7,7 @@ const Header: React.FC = () => {
 	const appContext: appContextInterface | null = useContext(UserContext)
 
 	return (
-    <FadeIn className="Header-container" yDistance={-30} xDistance={0} triggerOnce={true}>
+    <FadeIn className="Header-container" yDistance={-30} triggerOnce={true}>
       <Link className="Header-item" to="project-list" smooth duration={1000} offset={-150}>
         <div className="Header-item" {...{ tabIndex: "0 "} as any}>
           Projects

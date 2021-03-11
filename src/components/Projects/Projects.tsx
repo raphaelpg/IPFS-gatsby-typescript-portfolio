@@ -26,10 +26,10 @@ const Projects: React.FC = () => {
 
 					return(
 						<div key={id} className="App-project">
-              <FadeIn className="App-project-left-container" distance={30} triggerOnce={true}>
+              <FadeIn className="App-project-left-container" yDistance={0} xDistance={0} triggerOnce={true}>
                 <div className="App-project-title">{title}</div>
               </FadeIn>
-              <FadeIn className="App-project-right-container" distance={30} triggerOnce={true}>
+              <FadeIn className="App-project-right-container" yDistance={0} xDistance={0} triggerOnce={true}>
                 <div className="App-project-right-top-container">
                   <div className="App-project-description-container">
                     <ul className="App-project-description">

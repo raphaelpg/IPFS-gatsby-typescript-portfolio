@@ -1,17 +1,17 @@
 import React from 'react'
-import { FadeLeft } from '../../effects/effects'
+import { FadeIn } from '../../effects/effects'
 
 const Intro: React.FC = () => {
 
 	return (
-		<FadeLeft className="App-intro" distance={30} triggerOnce={true} id="intro">
+		<FadeIn className="App-intro" yDistance={0} xDistance={-30} triggerOnce={true} id="intro">
 			<div className="App-intro-container">
 				<div className="App-intro-title-container">
 					<div className="App-intro-name">Raphael Pinto Gregorio</div>
 					<div className="App-intro-job">Full Stack JavaScript Developer</div>
 				</div>
 			</div>
-		</FadeLeft>
+		</FadeIn>
 	)
 }
 

@@ -5,12 +5,15 @@ import Intro from './Intro/Intro'
 import Projects from './Projects/Projects'
 import Contact from './Contact/Contact'
 import Footer from './Footer/Footer'
-import { resumeUrl, stackLogos, projectsData, ProjectData } from '../data/data'
+import { IProject } from '../interfaces/project';
+import { resumeUrl } from '../data/data'
+import { stackLogos } from '../data/stack'
+import { projectsData } from '../data/projects'
 
 const App: React.FC = () => {
 	const [resume, setResume] = useState<string>()
 	const [logos, setLogos] = useState<{}>()
-	const [projects, setProjects] = useState<ProjectData[]>()
+	const [projects, setProjects] = useState<IProject[]>()
 
 	useEffect(() => {
 		setResume(resumeUrl)

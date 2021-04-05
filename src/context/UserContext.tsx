@@ -1,10 +1,10 @@
 import { createContext } from 'react';
-import { ProjectData } from '../data/data'
+import { IProject } from '../interfaces/project'
 
 export interface appContextInterface {
   resume: string,
   logos: {},
-  projects: ProjectData[]
+  projects: IProject[]
 }
 
 export const UserContext = createContext<appContextInterface | null>(null);

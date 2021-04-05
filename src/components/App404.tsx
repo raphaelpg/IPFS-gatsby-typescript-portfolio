@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import { UserContext, appContextInterface } from '../context/UserContext'
-import { resumeUrl, stackLogos, projectsData, ProjectData } from '../data/data'
+import { resumeUrl } from '../data/data'
+import { stackLogos } from '../data/stack'
+import { projectsData } from '../data/projects'
+import { IProject } from '../interfaces/project';
 import Footer from './Footer/Footer'
 
 const App404: React.FC = () => {
 	const [resume, setResume] = useState<string>()
 	const [logos, setLogos] = useState<{}>()
-	const [projects, setProjects] = useState<ProjectData[]>()
+	const [projects, setProjects] = useState<IProject[]>()
 
 	useEffect(() => {
 		setResume(resumeUrl)

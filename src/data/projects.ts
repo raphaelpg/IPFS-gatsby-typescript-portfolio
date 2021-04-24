@@ -2,6 +2,26 @@ import { IProject } from '../interfaces/project'
 
 export const projectsData: IProject[] = [
   {
+    id: '12',
+    img: 'sharp-screenshot.jpeg',
+    title: 'Thumbnails-to-Postgres',
+    description: [
+      'Local server to generate thumbnails from an uploaded image and add the local urls to a database.',
+      'It uses Sharp library and Postgres database.',
+      'Solo project.',
+      '',
+    ],
+    url: '',
+    repo: 'https://github.com/raphaelpg/thumbnails-to-postgres',
+    stack: [
+      'typescript',
+      'node',
+      'express',
+      'postgres',
+      'sharp',
+    ]
+  },
+  {
     id: '11',
     img: 'irrigate-prod.jpeg',
     title: 'Irrigate-app front end',

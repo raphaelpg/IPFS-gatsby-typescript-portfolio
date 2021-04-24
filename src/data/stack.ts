@@ -111,6 +111,10 @@ export const stackLogos: {} = {
     "filename": "pm2.jpeg",
     "url": "https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/"
   },
+  "postgres": {
+    "filename": "postgres.svg",
+    "url": "https://www.postgresql.org/"
+  },
   "react": {
     "filename": "react.jpeg",
     "url": "https://reactjs.org/docs/getting-started.html"
@@ -118,6 +122,10 @@ export const stackLogos: {} = {
   "sass": {
     "filename": "sass.svg",
     "url": "https://sass-lang.com/documentation"
+  },
+  "sharp": {
+    "filename": "sharp.svg",
+    "url": "https://sharp.pixelplumbing.com/"
   },
   "solidity": {
     "filename": "solidity.jpeg",

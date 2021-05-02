@@ -7,6 +7,10 @@ export const stackLogos: {} = {
     "filename": "aws.jpeg",
     "url": "https://aws.amazon.com/"
   },
+  "chai": {
+    "filename": "chai.svg",
+    "url": "https://www.chaijs.com/"
+  },
   "css": {
     "filename": "css.svg",
     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
@@ -98,6 +102,10 @@ export const stackLogos: {} = {
   "node": {
     "filename": "node.svg",
     "url": "https://nodejs.org/en/"
+  },
+  "openzeppelin": {
+    "filename": "openzeppellin.svg",
+    "url": "https://openzeppelin.com/"
   },
   "ovh": {
     "filename": "ovh.svg",

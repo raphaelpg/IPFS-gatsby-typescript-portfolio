@@ -21,11 +21,11 @@ const Projects: React.FC = () => {
         </div>
       </Link>
 			<div className='App-project-list'>
-				{projects?.map((project: any) => {
-          const {id, title, description, url, repo, img, stack } = project;
+				{projects?.map((project: any, index: number) => {
+          const {title, description, url, repo, img, stack } = project;
 
 					return(
-						<FadeIn key={id} className="App-project" duration={2000} triggerOnce={true}>
+						<FadeIn key={index} className="App-project" duration={2000} triggerOnce={true}>
               <div className="App-project-left-container" >
                 <div className="App-project-title">{title}</div>
               </div>

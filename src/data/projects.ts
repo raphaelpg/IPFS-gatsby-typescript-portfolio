@@ -2,7 +2,6 @@ import { IProject } from '../interfaces/project'
 
 export const projectsData: IProject[] = [
   {
-    id: '17',
     img: 'sharp-screenshot.jpeg',
     title: 'Thumbnails-to-Postgres',
     description: [
@@ -22,7 +21,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '16',
     img: 'irrigate-prod.jpeg',
     title: 'Irrigate-app front end',
     description: [
@@ -43,7 +41,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '15',
     img: 'irrigate-prod.jpeg',
     title: 'Irrigate-app back end',
     description: [
@@ -67,7 +64,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '14',
     img: 'ipfs-portfolio.jpeg',
     title: 'IPFS-Portfolio',
     description: [
@@ -90,7 +86,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '13',
     img: 'IrrigateV2_light.jpeg',
     title: 'Irrigate-x-Superfluid',
     description: [
@@ -113,7 +108,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '12',
     img: 'irrigate-screenshot.jpeg',
     title: 'Irrigate-x-Aave Prototype',
     description: [
@@ -136,7 +130,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '11',
     img: 'cryptogama-screenshot.jpeg',
     title: 'Cryptogama',
     description: [
@@ -162,7 +155,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '10',
     img: 'donato-screenshot.jpeg',
     title: 'Donato',
     description: [
@@ -183,7 +175,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '9',
     img: 'multisig.jpeg',
     title: 'MultiSig Wallet',
     description: [
@@ -203,7 +194,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '8',
     img: 'addressmonitoring.jpeg',
     title: 'Address Monitoring',
     description: [
@@ -221,7 +211,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '7',
     img: 'faucet.jpeg',
     title: 'ERC20 Faucet Example',
     description: [
@@ -242,7 +231,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '6',
     img: 'ERC721.jpeg',
     title: 'ERC721 Example',
     description: [
@@ -263,7 +251,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '5',
     img: 'ERC20.jpeg',
     title: 'ERC20 Example',
     description: [
@@ -284,7 +271,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '4',
     img: 'yobale-screenshot.jpeg',
     title: 'Yobale',
     description: [
@@ -305,7 +291,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '3',
     img: 'espritvelo-screenshot.jpeg',
     title: 'Esprit Velo',
     description: [
@@ -326,7 +311,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '2',
     img: 'spacedodger-screenshot.jpeg',
     title: 'SpaceDodger',
     description: [
@@ -344,7 +328,6 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '1',
     img: 'nekosake-screenshot.jpeg',
     title: 'NekoSake',
     description: [

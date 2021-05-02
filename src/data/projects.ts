@@ -2,7 +2,7 @@ import { IProject } from '../interfaces/project'
 
 export const projectsData: IProject[] = [
   {
-    id: '12',
+    id: '17',
     img: 'sharp-screenshot.jpeg',
     title: 'Thumbnails-to-Postgres',
     description: [
@@ -22,7 +22,7 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '11',
+    id: '16',
     img: 'irrigate-prod.jpeg',
     title: 'Irrigate-app front end',
     description: [
@@ -43,7 +43,7 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '10',
+    id: '15',
     img: 'irrigate-prod.jpeg',
     title: 'Irrigate-app back end',
     description: [
@@ -67,7 +67,7 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '9',
+    id: '14',
     img: 'ipfs-portfolio.jpeg',
     title: 'IPFS-Portfolio',
     description: [
@@ -90,7 +90,7 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '8',
+    id: '13',
     img: 'IrrigateV2_light.jpeg',
     title: 'Irrigate-x-Superfluid',
     description: [
@@ -113,7 +113,7 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '7',
+    id: '12',
     img: 'irrigate-screenshot.jpeg',
     title: 'Irrigate-x-Aave Prototype',
     description: [
@@ -136,7 +136,7 @@ export const projectsData: IProject[] = [
     ]
   },
   {
-    id: '6',
+    id: '11',
     img: 'cryptogama-screenshot.jpeg',
     title: 'Cryptogama',
     description: [
@@ -158,10 +158,11 @@ export const projectsData: IProject[] = [
       'ganache',
       'heroku',
       'highcharts',
+      'chai',
     ]
   },
   {
-    id: '5',
+    id: '10',
     img: 'donato-screenshot.jpeg',
     title: 'Donato',
     description: [
@@ -178,6 +179,108 @@ export const projectsData: IProject[] = [
       'truffle',
       'ganache',
       'web3',
+      'chai',
+    ]
+  },
+  {
+    id: '9',
+    img: 'multisig.jpeg',
+    title: 'MultiSig Wallet',
+    description: [
+      'MultiSigWallet smart contract where number of owners and minimum confirmations can be set in the contract deployment.',
+      '',
+      '',
+      '',
+    ],
+    url: '',
+    repo: 'https://github.com/raphaelpg/multiSigWallet',
+    stack: [
+      'ethereum',
+      'solidity',
+      'truffle',
+      'chai',
+      'openzeppelin',
+    ]
+  },
+  {
+    id: '8',
+    img: 'addressmonitoring.jpeg',
+    title: 'Address Monitoring',
+    description: [
+      'Js script to watch pending transactions involving an address on the blockchain.',
+      'The script needs an Infura project ID and an ethereum address as parameters.',
+      'It is currently set to monitor on ropsten testnet but you can switch to others modifying the provider URL.',
+      '',
+    ],
+    url: '',
+    repo: 'https://github.com/raphaelpg/addressMonitoring',
+    stack: [
+      'ethereum',
+      'web3',
+      'node',
+    ]
+  },
+  {
+    id: '7',
+    img: 'faucet.jpeg',
+    title: 'ERC20 Faucet Example',
+    description: [
+      'This is an ERC20 Faucet template to deploy on the blockchain.',
+      'ERC20 EIP https://eips.ethereum.org/EIPS/eip-20.',
+      '',
+      '',
+    ],
+    url: '',
+    repo: 'https://github.com/raphaelpg/ERC20FaucetExample',
+    stack: [
+      'ethereum',
+      'solidity',
+      'truffle',
+      'chai',
+      'openzeppelin',
+      'node',
+    ]
+  },
+  {
+    id: '6',
+    img: 'ERC721.jpeg',
+    title: 'ERC721 Example',
+    description: [
+      'This is an ERC721 Token template to deploy on ethereum blockchain.',
+      'The purpose is to test functions to better understand how they work and what they do.',
+      'See test file to check \'ERC721\' standards functions (was tested with Truffle).',
+      'ERC721 EIP https://eips.ethereum.org/EIPS/eip-721',
+    ],
+    url: '',
+    repo: 'https://github.com/raphaelpg/ERC721Example',
+    stack: [
+      'ethereum',
+      'solidity',
+      'truffle',
+      'chai',
+      'openzeppelin',
+      'node',
+    ]
+  },
+  {
+    id: '5',
+    img: 'ERC20.jpeg',
+    title: 'ERC20 Example',
+    description: [
+      'This is an ERC20 Token template to deploy on the blockchain.',
+      'One token example has been deployed on Ropsten testnet at \'0x6f1d6BD8C4cca3464aB0DE2FD2BFE532a2B60eC3\' called \'EET\'.',
+      'With Truffle, tested ERC20 metadatas, standards and internal functions, also \'Ownable\' functions.',
+      '',
+    ],
+    url: '',
+    repo: 'https://github.com/raphaelpg/ERC20Example',
+    stack: [
+      'ethereum',
+      'solidity',
+      'truffle',
+      'chai',
+      'openzeppelin',
+      'node',
     ]
   },
   {

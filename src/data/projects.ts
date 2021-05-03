@@ -327,24 +327,4 @@ export const projectsData: IProject[] = [
       'html',
     ]
   },
-  {
-    img: 'nekosake-screenshot.jpeg',
-    title: 'NekoSake',
-    description: [
-      'Brand website: promote a japanese sake brand through a clean and smooth website. The owner has a dashboard where he can customize the content himself.',
-      'Solo project.',
-      '',
-      '',
-    ],
-    url: 'https://www.neko-sake.com/',
-    repo: '',
-    stack: [
-      'javascript',
-      'css',
-      'html',
-      'php',
-      'sql',
-      'ionos',
-    ]
-  },
 ];

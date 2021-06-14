@@ -2,6 +2,51 @@ import { IProject } from '../interfaces/project'
 
 export const projectsData: IProject[] = [
   {
+    img: 'adEth-screenshot.jpeg',
+    title: 'AdEth: advertising NFTs',
+    description: [
+      'AdEth is a POC made during ETH Global Web3 Weekend Hackathon, the purpose is to onboard advertising industry into web3 allowing partnership through NFTs.',
+      'The project allows companies to generate an NFT that can be displayed on websites as an ad.',
+      'During the minting process, the company must provide a budget in stablecoin which is added to the NFT, each time a user clics on the ad, the website is rewarded by a portion of the budget.',
+      'Made in 48h, the contracts are deployed on Polygon testnet (Mumbai) and the NFTs are stored on Filecoin thanks to "NFT Storage" tool.',
+      'Solo project.',
+    ],
+    url: '',
+    repo: 'https://github.com/raphaelpg/AdETH',
+    stack: [
+      'polygon',
+      'solidity',
+      'truffle',
+      'web3',
+      'openzeppelin',
+      'filecoin',
+      'nft-storage',
+      'metamask',
+      'react',
+    ]
+  },
+  {
+    img: 'irrigate-polygon.jpeg',
+    title: 'Irrigate-app on Matic/Polygon',
+    description: [
+      'Irrigate version handling ERC20 donations deployed on Matic/Polygon testnet (Mumbai).',
+      'The client is a static website made with Gatsby and deployed on IPFS through Fleek, using web3 and Metamask to interact with the EVM.',
+      'The server is a Node JS instance that handles CRUD operations with a NOSQL database and smart contracts calls.',
+      'Both server and client are currently live, smart contract is deployed on Mumbai testnet.',
+      'Solo project.',
+    ],
+    url: 'https://irrigateapp.xyz/',
+    repo: 'https://github.com/raphaelpg/irrigate-prod-client',
+    stack: [
+      'solidity',
+      'truffle',
+      'web3',
+      'openzeppelin',
+      'polygon',
+      'metamask',
+    ]
+  },
+  {
     img: 'sharp-screenshot.jpeg',
     title: 'Thumbnails-to-Postgres',
     description: [

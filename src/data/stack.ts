@@ -27,6 +27,10 @@ export const stackLogos: {} = {
     "filename": "express.svg",
     "url": "http://expressjs.com/"
   },
+  "filecoin": {
+    "filename": "filecoin.svg",
+    "url": "https://docs.filecoin.io/"
+  },
   "fleek": {
     "filename": "fleek.jpeg",
     "url": "https://fleek.co/ipfs-gateway/"
@@ -91,9 +95,17 @@ export const stackLogos: {} = {
     "filename": "linkedin.jpeg",
     "url": "https://www.linkedin.com/in/raphael-pinto-gregorio-660b2579/"
   },
+  "metamask": {
+    "filename": "metamask.svg",
+    "url": "https://metamask.io/"
+  },
   "mongo": {
     "filename": "mongo.svg",
     "url": "https://www.mongodb.com/2"
+  },
+  "nft-storage": {
+    "filename": "nft-storage.jpeg",
+    "url": "https://nft.storage/"
   },
   "nginx": {
     "filename": "nginx.svg",
@@ -118,6 +130,10 @@ export const stackLogos: {} = {
   "pm2": {
     "filename": "pm2.jpeg",
     "url": "https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/"
+  },
+  "polygon": {
+    "filename": "polygon.svg",
+    "url": "https://docs.matic.network/"
   },
   "postgres": {
     "filename": "postgres.svg",

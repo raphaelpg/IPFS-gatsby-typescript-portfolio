@@ -2,8 +2,31 @@ import { IProject } from '../interfaces/project'
 
 export const projectsData: IProject[] = [
   {
+    img: 'bucketly_logo.jpeg',
+    title: 'Bucketly: Reduce L2 bridging costs (Hackmoney 2021)',
+    description: [
+      'Bucketly makes it more cost-effective to bridge assets to L2s, in this case Polygon. It batches L1 txns into a bucket with other txns. They all split the fees for bridging.',
+      'Doing this helps you save 3 to 5 times as much on fees. For individuals, it can be used for transfers on low cap accounts.',
+      'We used hardhat for coding and testing Solidity contracts, we used Web3 and React for the frontend, and NodeJS, Express and Ethers for the relay server.',
+      'Made in July 2021 for the Hackmoney hackathon, the contracts are deployed on Ethereum testnet Goerli and Polygon testnet (Mumbai).',
+      'Team project, I developed part of the relay server, the smart contracts, the deployments and tests scripts.',
+    ],
+    url: 'https://www.youtube.com/watch?v=oaLwqtgNU5U&ab_channel=MitchellOpatowsky',
+    repo: 'https://github.com/BUIDLHub/bucketly_hackmoney_2021',
+    stack: [
+      'polygon',
+      'hardhat',
+      'ethers',
+      'solidity',
+      'openzeppelin',
+      'typescript',
+      'node',
+      'express',
+    ]
+  },
+  {
     img: 'adEth-screenshot.jpeg',
-    title: 'AdEth: advertising NFTs',
+    title: 'AdEth: advertising NFTs (Web3 Weekend Hackathon 2021)',
     description: [
       'AdEth is a POC made during ETH Global Web3 Weekend Hackathon, the purpose is to onboard advertising industry into web3 allowing partnership through NFTs.',
       'The project allows companies to generate an NFT that can be displayed on websites as an ad.',
@@ -154,7 +177,7 @@ export const projectsData: IProject[] = [
   },
   {
     img: 'irrigate-screenshot.jpeg',
-    title: 'Irrigate-x-Aave Prototype',
+    title: 'Irrigate-x-Aave Prototype (Planet Wide SOS Hackathon 2020)',
     description: [
       'Hackathon POC: A platform to gather all NGO\'s and associations accross the world allowing users to send donations from anywhere to everywhere using DAI currency.',
       'It integrates Aave Lending Pool protocol allowing donations to be staked and generate interests to cover the transactions and maintenance costs.',
@@ -175,8 +198,28 @@ export const projectsData: IProject[] = [
     ]
   },
   {
+    img: 'donato-screenshot.jpeg',
+    title: 'Donato: donation app (ETH Turin 2020 Hackathon)',
+    description: [
+      'Hackathon project: DonaTo is an application based on Ethereum which aims to bring transparency and accountability to donations.',
+      'People who suffered from a disaster can open an account and start receiving donations from around the world.',
+      'Team project. Did the smart contract and the tests part.',
+      '',
+    ],
+    url: '',
+    repo: 'https://github.com/DonaTo-Project/donato',
+    stack: [
+      'ethereum',
+      'solidity',
+      'truffle',
+      'ganache',
+      'web3',
+      'chai',
+    ]
+  },
+  {
     img: 'cryptogama-screenshot.jpeg',
-    title: 'Cryptogama',
+    title: 'Cryptogama: DEX prototype (ALYRA 2020 course validation project)',
     description: [
       'Course validation project: Cryptogama is a decentralized exchange prototype for Ethereum ERC-20 tokens that I made as a student project during a blockchain course at Alyra school in Paris. It includes a faucet so you can test it with Metamask on Ropsten network.',
       'Solo project.',
@@ -196,26 +239,6 @@ export const projectsData: IProject[] = [
       'ganache',
       'heroku',
       'highcharts',
-      'chai',
-    ]
-  },
-  {
-    img: 'donato-screenshot.jpeg',
-    title: 'Donato',
-    description: [
-      'Hackathon project: DonaTo is an application based on Ethereum which aims to bring transparency and accountability to donations.',
-      'People who suffered from a disaster can open an account and start receiving donations from around the world.',
-      'Team project. Did the smart contract and the tests part.',
-      '',
-    ],
-    url: '',
-    repo: 'https://github.com/DonaTo-Project/donato',
-    stack: [
-      'ethereum',
-      'solidity',
-      'truffle',
-      'ganache',
-      'web3',
       'chai',
     ]
   },

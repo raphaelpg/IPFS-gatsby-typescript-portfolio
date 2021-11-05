@@ -23,6 +23,10 @@ export const stackLogos: {} = {
     "filename": "ethereum.jpeg",
     "url": "https://ethereum.org/en/"
   },
+  "ethers": {
+    "filename": "ethers.jpeg",
+    "url": "https://docs.ethers.io/v5/"
+  },
   "express": {
     "filename": "express.svg",
     "url": "http://expressjs.com/"
@@ -54,6 +58,10 @@ export const stackLogos: {} = {
   "googleplaces": {
     "filename": "googleplaces.jpeg",
     "url": "https://developers.google.com/places/web-service/overview"
+  },
+  "hardhat": {
+    "filename": "hardhat.jpeg",
+    "url": "https://hardhat.org/getting-started/"
   },
   "heroku": {
     "filename": "heroku.jpeg",
